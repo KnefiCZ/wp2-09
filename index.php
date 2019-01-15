@@ -8,18 +8,20 @@
   <?php
       $number = 0;
       $attempt = 0;
-      define('MAX_ATTEMPTS',10);
+      define('MAX_ATTEMPTS',12);
         while (($number <> 10)&&($attempt <= MAX_ATTEMPTS)) {
           $number=rand(0,20);
           echo $number . "<br>";
           $attempt++;
-
     ?>         <br />
     <?php
-
-
         }
-            echo  $attempt . "pokusů.";
+        if (($number == 10 )&&($number != MAX_ATTEMPTS)) {
+          echo  $attempt . "pokusů.";
+        }
+        else {
+          echo "NEUHADL SI! >>>:()";
+        }
     ?>
   </body>
   </html>
