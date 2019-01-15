@@ -8,8 +8,8 @@
   <?php
       $number = 0;
       $attempt = 0;
-      $maxattempt = 10;
-        while (($number <> 10)&&($attempt <= $maxattempt)) {
+      define('MAX_ATTEMPTS',10);
+        while (($number <> 10)&&($attempt <= MAX_ATTEMPTS)) {
           $number=rand(0,20);
           echo $number . "<br>";
           $attempt++;
