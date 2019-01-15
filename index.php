@@ -8,16 +8,18 @@
   <?php
       $number = 0;
       $attempt = 0;
-        while (($number <> 10)&&($attempt <= 9)) {
+      $maxattempt = 10;
+        while (($number <> 10)&&($attempt <= $maxattempt)) {
           $number=rand(0,20);
           echo $number . "<br>";
           $attempt++;
 
     ?>         <br />
     <?php
-    
-          echo  $attempt . "pokusů.";
+
+
         }
+            echo  $attempt . "pokusů.";
     ?>
   </body>
   </html>
